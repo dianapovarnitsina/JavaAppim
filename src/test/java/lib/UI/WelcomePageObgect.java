@@ -1,6 +1,7 @@
 package lib.UI;
 
 import io.appium.java_client.AppiumDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class WelcomePageObgect extends MainPageObject {
 
@@ -13,7 +14,7 @@ public class WelcomePageObgect extends MainPageObject {
         GET_STARTED_BUTTON = "id:Get started",
         SKIP = "id:Skip";
 
-    public WelcomePageObgect(AppiumDriver driver) {
+    public WelcomePageObgect(RemoteWebDriver driver) {
         super(driver);
     }
 

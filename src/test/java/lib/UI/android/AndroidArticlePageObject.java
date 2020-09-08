@@ -1,7 +1,7 @@
 package lib.UI.android;
 
-import io.appium.java_client.AppiumDriver;
 import lib.UI.ArticlePageObject;
+import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class AndroidArticlePageObject extends ArticlePageObject {
     static {
@@ -16,7 +16,7 @@ public class AndroidArticlePageObject extends ArticlePageObject {
         FOLDER = "xpath://*[@class='android.widget.TextView'][@text='{FOLDER}']";
     }
 
-    public AndroidArticlePageObject(AppiumDriver driver) {
+    public AndroidArticlePageObject(RemoteWebDriver driver) {
         super(driver);
     }
 }
